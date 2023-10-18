@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>powCounter</title>
+    </head>
+    <body class="box-col">
+        <section id="score-section" class="box-col border red-bg">
+            <h1>Point : <span id="score">0</span></h1>
+            <div id="detail-score" class="box-row">
+                <h2>Hero : <span id="hero-point">0</span> (-<span id="ignore-score">0</span>)</h2>
+                <h2>Vilain : <span id="vilain-point">0</span></h2>
+            </div>
+        </section>
+
+        <section id="stack-section" class="box-col border">
+
+
+            <div id="stack-box" class="box-row">
+
+                <div class="box-col gap">
+                    <h2>Pile de Hero</h2>
+                    <div id="hero-stack" class="box-col stack"></div>
+                    <button id="btn-add-hero" class="btn">Add Hero</button>
+                </div>
+
+                <div class="box-col gap">
+                    <h2>Pile de vilain</h2>
+                    <div id="vilain-stack" class="box-col stack"></div>
+                    <button id="btn-add-vilain" class="btn">Add Vilain</button>
+                </div>
+
+            </div>
+
+        </section>
+        <script src="./powCounter.js"></script>
+    </body>
+</html>
